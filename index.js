@@ -59,4 +59,6 @@ const populateReadMe = (projectTitle, projectLink, description, installationInst
     ${license}`
 }
 
-console.log(readmeQuestions);
+inquirer.prompt(readmeQuestions).then(function(answers) {
+    console.log(answers);
+})
