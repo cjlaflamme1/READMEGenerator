@@ -1,6 +1,5 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const questions = require('./questions');
 const { readmeQuestions } = require("./questions");
 
 const populateReadMe = (projectTitle, projectLink, description, installationInstructions, usage, developerName, email, gitHubUsername, contributing, tests, license) => {
