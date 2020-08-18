@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { readmeQuestions, populateReadMe } = require("./questions");
-const licenses = require('./licenses')
+const licenses = require('./licenses');
 
 
 inquirer.prompt(readmeQuestions).then(function ({ projectTitle, projectLink, description, installationInstructions, usage, developerName, email, gitHubUsername, contributing, tests, license }) {
