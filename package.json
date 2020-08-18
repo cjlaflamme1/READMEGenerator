@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/cjlaflamme1/READMEGenerator#readme",
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "moment": "^2.27.0"
   }
 }

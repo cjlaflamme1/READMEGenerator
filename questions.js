@@ -1,3 +1,5 @@
+const licenses = require('./licenses');
+
 const readmeQuestions = [
     {
        type: "input",
@@ -54,17 +56,16 @@ const readmeQuestions = [
         message: "What license would you like to use for your project?",
         name: "license", 
         choices: [
-            "License 1",
-            "License 2",
-            "License 3",
-            "License 4",
+            licenses.licenses[0].title,
+            licenses.licenses[1].title,
+            licenses.licenses[2].title
         ]
      },
 ];
 
-const populateReadMe = (projectTitle, projectLink, description, installationInstructions, usage, developerName, email, gitHubUsername, contributing, tests, license) => {
+const populateReadMe = (projectTitle, projectLink, description, installationInstructions, usage, developerName, email, gitHubUsername, contributing, tests, selectedLicense, selectedBadge) => {
     return `# ${projectTitle}
-
+${selectedBadge}
 
 
 ## Table of Contents
@@ -115,8 +116,9 @@ ${tests}
     
 # License
     
-${license}`
+${selectedLicense}`
 }
+
 
 module.exports = {
     readmeQuestions,
