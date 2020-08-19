@@ -15,7 +15,6 @@ const licenses = require('./licenses');
 inquirer.prompt(readmeQuestions).then(function ({ projectTitle, projectLink, description, installationInstructions, usage, developerName, email, gitHubUsername, contributing, tests, license }) {
     const { text: selectedLicense, badge: selectedBadge } = licenses.licenses.find((item) => item.title === license);
     const readME = populateReadMe(projectTitle, projectLink, description, installationInstructions, usage, developerName, email, gitHubUsername, contributing, tests, selectedLicense, selectedBadge);
-    console.log(readME);
     fs.writeFile("newREADME.md", readME, (err) => {
         if (err) console.log(err);
         console.log('The file has been saved!');
