@@ -8,7 +8,7 @@ const readmeQuestions = [
     },
     {
         type: "input",
-        message: "What is the link to you project?",
+        message: "What is the link to your project?",
         name: "projectLink"
      },
      {
