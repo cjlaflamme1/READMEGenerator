@@ -1,4 +1,3 @@
-Test layout
 # README Generator
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
@@ -20,7 +19,7 @@ This NODE.js app will develope a quality README for your Web Application project
     
     
 ### Finished Project
-Project Link: [README Generator](https://github.com/cjlaflamme1/READMEGenerator)
+Project Demonstration Link: [README Generator Demonstration Video](https://drive.google.com/file/d/1dWPoyQeBNpSd79Blals2bOlX0b6loXgf/view)
     
     
 ### Project Screenshot
